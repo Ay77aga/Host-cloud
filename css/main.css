@@ -315,16 +315,16 @@ form input:focus {
   width: 100%;
 }
 
-.plans .container .plans {
+.plans .container  {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 280px);
+  grid-template-columns: repeat(auto-fill, 350px);
   gap: 40px 30px;
   margin-top: -200px;
   justify-content: center;
   width: 100%;
 }
 
-.plans .container .plans .plan {
+.plans .container  .plan {
   background: #fff;
   box-shadow: 0 0 8px 5px rgba(0, 0, 0, .2);
   display: flex;
@@ -338,7 +338,7 @@ form input:focus {
   position: relative;
 }
 
-.plans .container .plans .plan h3 {
+.plans .container .plan h3 {
   background: var(--main-color);
   margin: 15px auto;
   padding: 20px 35px;
@@ -347,11 +347,11 @@ form input:focus {
   position: relative;
 }
 
-.plans .container .plans .plan h3::before {
+.plans .container .plan h3::before {
   content: "$";
 }
 
-.plans .container .plans .plan h3::after {
+.plans .container  .plan h3::after {
   content: "MONTHLY";
   font-size: 13px;
   position: absolute;
@@ -361,24 +361,24 @@ form input:focus {
   left: 0;
 }
 
-.plans .container .plans .plan>p {
+.plans .container  .plan>p {
   font-size: 13px;
 }
 
-.plans .container .plans .plan .info {
+.plans .container .plan .info {
   text-align: left;
   font-size: 16px;
   padding: 5px;
   border-top: 1px solid #eee;
 }
 
-.plans .container .plans .plan .info p {
+.plans .container  .plan .info p {
   position: relative;
   padding-left: 15px;
   margin: 10px auto;
 }
 
-.plans .container .plans .plan .info p::before {
+.plans .container  .plan .info p::before {
   content: "";
   position: absolute;
   height: 13px;
@@ -391,7 +391,7 @@ form input:focus {
   transform: rotateZ(45deg);
 }
 
-.plans .container .plans .plan a {
+.plans .container  .plan a {
   padding: 10px;
   background: var(--main-color);
   position: absolute;
@@ -470,7 +470,7 @@ form input:focus {
 .testimonials .container .test {
   display: flex;
   flex-flow: row nowrap;
-  width: 95%;
+  max-width: 500px;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   box-shadow: 0 0 8px 5px rgba(0, 0, 0, .1);
@@ -526,10 +526,9 @@ footer {
 
 footer .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 10px;
   align-items: center;
-  width: 100%;
 }
 
 footer div:first-child p {
